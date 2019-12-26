@@ -23,11 +23,11 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
         
         getData()
-       
+        
     }
     
     func getData() {
-        //. order sıralama demek tarihe göre sıraladık 
+        
         let firestoreeDatabase = Firestore.firestore()
         firestoreeDatabase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { (snapsot, error) in
             if error != nil {
@@ -70,7 +70,7 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! tableViewController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! tableViewCell
         cell.likeLabel.text = String(likeArray[indexPath.row])
         cell.commentLabel.text = commentArrau[indexPath.row]
         cell.usernameLabel.text = usernameArray[indexPath.row]
@@ -80,7 +80,7 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         return cell
     }
     
-
     
-
+    
+    
 }

@@ -17,7 +17,7 @@ class signUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -34,7 +34,7 @@ class signUpViewController: UIViewController {
         }else{
             makeAlert(titleInput: "HATA", messageInput: "Kullanıcı Adı veya Parola Hatalı")
         }
-            
+        
         
         
     }
@@ -45,7 +45,7 @@ class signUpViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-
-   
-
+    
+    
+    
 }

@@ -17,12 +17,12 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         imageView.isUserInteractionEnabled = true
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imageView.addGestureRecognizer(recognizer)
     }
-   @objc func chooseImage() {
+    @objc func chooseImage() {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.sourceType = .photoLibrary
@@ -30,7 +30,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
         present(picker, animated: true, completion: nil)
     }
     
-   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imageView.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
     }
@@ -54,9 +54,9 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
             let imageReferance = mediaFolder.child(" \(uuıd).jpeg") // sonuna jpg koymassam fanklı kaydeder.
             imageReferance.putData(data, metadata: nil) { (metada, error) in
                 if error != nil{
-                  self.alert(titleInput: "Hata", messageInput: error?.localizedDescription ?? "Hatalı")
+                    self.alert(titleInput: "Hata", messageInput: error?.localizedDescription ?? "Hatalı")
                 }else{
-                   
+                    
                     imageReferance.downloadURL(completion: { (url, error) in
                         if error == nil {
                             let imageUrl = url?.absoluteString //
@@ -74,7 +74,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
                                     self.imageView.image = UIImage(named: "imageadd")
                                     self.commentText.text = ""
                                 }
-                            
+                                
                             })
                             
                         }
@@ -86,5 +86,5 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     
-
+    
 }

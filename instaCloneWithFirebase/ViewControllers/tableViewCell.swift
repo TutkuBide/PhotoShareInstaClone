@@ -18,24 +18,24 @@ class tableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+        
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         
     }
     @IBAction func likeButton(_ sender: Any) {
-       
+        
         let fireStoreDatabase = Firestore.firestore()
         
         if let likeCount = Int(likeLabel.text!) {
             let likeStore = ["likes" : likeCount + 1] as [String : Any]
-             fireStoreDatabase.collection("Posts").document(documentIDLabel.text!).setData(likeStore, merge: true)
+            fireStoreDatabase.collection("Posts").document(documentIDLabel.text!).setData(likeStore, merge: true)
         }
         
-       
+        
         
         
     }

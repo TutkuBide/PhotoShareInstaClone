@@ -3,25 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8535DDD3232C9830001CB65A /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8535DDD2232C9830001CB65A /* tableViewCell.swift */; };
 		85AE6C902329E78300C0F470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C8F2329E78300C0F470 /* AppDelegate.swift */; };
-		85AE6C922329E78300C0F470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C912329E78300C0F470 /* ViewController.swift */; };
+		85AE6C922329E78300C0F470 /* signVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C912329E78300C0F470 /* signVC.swift */; };
 		85AE6C952329E78300C0F470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C932329E78300C0F470 /* Main.storyboard */; };
 		85AE6C972329E78500C0F470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C962329E78500C0F470 /* Assets.xcassets */; };
 		85AE6C9A2329E78500C0F470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C982329E78500C0F470 /* LaunchScreen.storyboard */; };
+		85AE6CA22329E8E900C0F470 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6CA12329E8E900C0F470 /* GoogleService-Info.plist */; };
+		85AE6CA42329F18100C0F470 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6CA32329F18100C0F470 /* SettingsViewController.swift */; };
+		85AE6CA62329F19600C0F470 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6CA52329F19600C0F470 /* UploadViewController.swift */; };
+		85AE6CA82329F1AB00C0F470 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6CA72329F1AB00C0F470 /* FeedViewController.swift */; };
+		85C237E4235165EE00579F04 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237E3235165EE00579F04 /* FacebookCore.framework */; };
+		85C237E62351660A00579F04 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237E52351660A00579F04 /* FacebookLogin.framework */; };
+		85C237E82351660A00579F04 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237E72351660A00579F04 /* FacebookShare.framework */; };
+		85C237EA2351660A00579F04 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237E92351660A00579F04 /* FBSDKCoreKit.framework */; };
+		85C237EC2351660A00579F04 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237EB2351660A00579F04 /* FBSDKLoginKit.framework */; };
+		85C237EE2351660A00579F04 /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237ED2351660A00579F04 /* FBSDKPlacesKit.framework */; };
+		85C237F02351660A00579F04 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237EF2351660A00579F04 /* FBSDKShareKit.framework */; };
+		85C237F22351660A00579F04 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F12351660A00579F04 /* FirebaseAuth.framework */; };
+		85C237F42351660A00579F04 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F32351660A00579F04 /* FirebaseCore.framework */; };
+		85C237F62351660A00579F04 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F52351660A00579F04 /* FirebaseCoreDiagnostics.framework */; };
+		85C237F82351660A00579F04 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F72351660A00579F04 /* FirebaseFirestore.framework */; };
+		85C237FA2351660A00579F04 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F92351660A00579F04 /* FirebaseInstanceID.framework */; };
+		85C237FC2351660A00579F04 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237FB2351660A00579F04 /* FirebaseStorage.framework */; };
+		85C237FE2351660A00579F04 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237FD2351660A00579F04 /* GoogleDataTransport.framework */; };
+		85F591EE2332377F00362D36 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F591ED2332377F00362D36 /* signUpViewController.swift */; };
+		86A2B1175E1000700340C0B3 /* Pods_instaCloneWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003FC7C22FF1458B0157D0FE /* Pods_instaCloneWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003FC7C22FF1458B0157D0FE /* Pods_instaCloneWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaCloneWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFE36E50638B1D0AB7501A4 /* Pods-instaCloneWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaCloneWithFirebase.debug.xcconfig"; path = "Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		8535DDD2232C9830001CB65A /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
 		85AE6C8C2329E78300C0F470 /* instaCloneWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaCloneWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AE6C8F2329E78300C0F470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85AE6C912329E78300C0F470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85AE6C912329E78300C0F470 /* signVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signVC.swift; sourceTree = "<group>"; };
 		85AE6C942329E78300C0F470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85AE6C962329E78500C0F470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AE6C992329E78500C0F470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85AE6C9B2329E78500C0F470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85AE6CA12329E8E900C0F470 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85AE6CA32329F18100C0F470 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		85AE6CA52329F19600C0F470 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		85AE6CA72329F1AB00C0F470 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		85C237E3235165EE00579F04 /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237E52351660A00579F04 /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237E72351660A00579F04 /* FacebookShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237E92351660A00579F04 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237EB2351660A00579F04 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237ED2351660A00579F04 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237EF2351660A00579F04 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237F12351660A00579F04 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237F32351660A00579F04 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237F52351660A00579F04 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237F72351660A00579F04 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237F92351660A00579F04 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237FB2351660A00579F04 /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C237FD2351660A00579F04 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F591ED2332377F00362D36 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		9818295D1C5E03B464AD24BE /* Pods-instaCloneWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaCloneWithFirebase.release.xcconfig"; path = "Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C237E62351660A00579F04 /* FacebookLogin.framework in Frameworks */,
+				85C237E82351660A00579F04 /* FacebookShare.framework in Frameworks */,
+				85C237EA2351660A00579F04 /* FBSDKCoreKit.framework in Frameworks */,
+				85C237EC2351660A00579F04 /* FBSDKLoginKit.framework in Frameworks */,
+				85C237EE2351660A00579F04 /* FBSDKPlacesKit.framework in Frameworks */,
+				85C237F02351660A00579F04 /* FBSDKShareKit.framework in Frameworks */,
+				85C237F22351660A00579F04 /* FirebaseAuth.framework in Frameworks */,
+				85C237F42351660A00579F04 /* FirebaseCore.framework in Frameworks */,
+				85C237F62351660A00579F04 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				85C237F82351660A00579F04 /* FirebaseFirestore.framework in Frameworks */,
+				85C237FA2351660A00579F04 /* FirebaseInstanceID.framework in Frameworks */,
+				85C237FC2351660A00579F04 /* FirebaseStorage.framework in Frameworks */,
+				85C237FE2351660A00579F04 /* GoogleDataTransport.framework in Frameworks */,
+				85C237E4235165EE00579F04 /* FacebookCore.framework in Frameworks */,
+				86A2B1175E1000700340C0B3 /* Pods_instaCloneWithFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035024CDB6113B2C5A770473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85C237E52351660A00579F04 /* FacebookLogin.framework */,
+				85C237E72351660A00579F04 /* FacebookShare.framework */,
+				85C237E92351660A00579F04 /* FBSDKCoreKit.framework */,
+				85C237EB2351660A00579F04 /* FBSDKLoginKit.framework */,
+				85C237ED2351660A00579F04 /* FBSDKPlacesKit.framework */,
+				85C237EF2351660A00579F04 /* FBSDKShareKit.framework */,
+				85C237F12351660A00579F04 /* FirebaseAuth.framework */,
+				85C237F32351660A00579F04 /* FirebaseCore.framework */,
+				85C237F52351660A00579F04 /* FirebaseCoreDiagnostics.framework */,
+				85C237F72351660A00579F04 /* FirebaseFirestore.framework */,
+				85C237F92351660A00579F04 /* FirebaseInstanceID.framework */,
+				85C237FB2351660A00579F04 /* FirebaseStorage.framework */,
+				85C237FD2351660A00579F04 /* GoogleDataTransport.framework */,
+				85C237E3235165EE00579F04 /* FacebookCore.framework */,
+				003FC7C22FF1458B0157D0FE /* Pods_instaCloneWithFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BB4D0FCD252104153E2BA1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BFE36E50638B1D0AB7501A4 /* Pods-instaCloneWithFirebase.debug.xcconfig */,
+				9818295D1C5E03B464AD24BE /* Pods-instaCloneWithFirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		85AE6C832329E78300C0F470 = {
 			isa = PBXGroup;
 			children = (
 				85AE6C8E2329E78300C0F470 /* instaCloneWithFirebase */,
 				85AE6C8D2329E78300C0F470 /* Products */,
+				3BB4D0FCD252104153E2BA1F /* Pods */,
+				035024CDB6113B2C5A770473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +147,27 @@
 			isa = PBXGroup;
 			children = (
 				85AE6C8F2329E78300C0F470 /* AppDelegate.swift */,
-				85AE6C912329E78300C0F470 /* ViewController.swift */,
+				85F84FD423B4336400F4760C /* ViewControllers */,
 				85AE6C932329E78300C0F470 /* Main.storyboard */,
 				85AE6C962329E78500C0F470 /* Assets.xcassets */,
 				85AE6C982329E78500C0F470 /* LaunchScreen.storyboard */,
 				85AE6C9B2329E78500C0F470 /* Info.plist */,
+				85AE6CA12329E8E900C0F470 /* GoogleService-Info.plist */,
 			);
 			path = instaCloneWithFirebase;
+			sourceTree = "<group>";
+		};
+		85F84FD423B4336400F4760C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85AE6C912329E78300C0F470 /* signVC.swift */,
+				85F591ED2332377F00362D36 /* signUpViewController.swift */,
+				8535DDD2232C9830001CB65A /* tableViewCell.swift */,
+				85AE6CA72329F1AB00C0F470 /* FeedViewController.swift */,
+				85AE6CA52329F19600C0F470 /* UploadViewController.swift */,
+				85AE6CA32329F18100C0F470 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85AE6C9E2329E78500C0F470 /* Build configuration list for PBXNativeTarget "instaCloneWithFirebase" */;
 			buildPhases = (
+				C368CEEC586B03669E09FA19 /* [CP] Check Pods Manifest.lock */,
 				85AE6C882329E78300C0F470 /* Sources */,
 				85AE6C892329E78300C0F470 /* Frameworks */,
 				85AE6C8A2329E78300C0F470 /* Resources */,
+				43892921A194DA41CCCB3D0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85AE6C9A2329E78500C0F470 /* LaunchScreen.storyboard in Resources */,
+				85AE6CA22329E8E900C0F470 /* GoogleService-Info.plist in Resources */,
 				85AE6C972329E78500C0F470 /* Assets.xcassets in Resources */,
 				85AE6C952329E78300C0F470 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +239,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43892921A194DA41CCCB3D0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C368CEEC586B03669E09FA19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instaCloneWithFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85AE6C882329E78300C0F470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AE6C922329E78300C0F470 /* ViewController.swift in Sources */,
+				85F591EE2332377F00362D36 /* signUpViewController.swift in Sources */,
+				8535DDD3232C9830001CB65A /* tableViewCell.swift in Sources */,
+				85AE6C922329E78300C0F470 /* signVC.swift in Sources */,
+				85AE6CA62329F19600C0F470 /* UploadViewController.swift in Sources */,
+				85AE6CA82329F1AB00C0F470 /* FeedViewController.swift in Sources */,
 				85AE6C902329E78300C0F470 /* AppDelegate.swift in Sources */,
+				85AE6CA42329F18100C0F470 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +436,7 @@
 		};
 		85AE6C9F2329E78500C0F470 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFE36E50638B1D0AB7501A4 /* Pods-instaCloneWithFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +454,7 @@
 		};
 		85AE6CA02329E78500C0F470 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9818295D1C5E03B464AD24BE /* Pods-instaCloneWithFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
