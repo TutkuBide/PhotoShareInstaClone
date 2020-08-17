@@ -1,5 +1,2 @@
-![Screen Shot 2020-08-17 at 15 38 42](https://user-images.githubusercontent.com/47797293/90397057-f733a400-e09f-11ea-8275-a22e12b45211.png)
-![Screen Shot 2020-08-17 at 15 37 44](https://user-images.githubusercontent.com/47797293/90397071-fa2e9480-e09f-11ea-92ad-bd293862ddf1.png)
-![Screen Shot 2020-08-17 at 15 37 52](https://user-images.githubusercontent.com/47797293/90397073-fac72b00-e09f-11ea-903a-767eff5e0b2c.png)
-![Screen Shot 2020-08-17 at 15 38 36](https://user-images.githubusercontent.com/47797293/90397074-fac72b00-e09f-11ea-9cb9-203c8358c7cd.png)
+
 ![Screen Shot 2019-12-26 at 03 34 32](https://user-images.githubusercontent.com/47797293/71451999-dd4ff480-2790-11ea-8909-a35b8e717a6c.png)
