@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8535DDD3232C9830001CB65A /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8535DDD2232C9830001CB65A /* tableViewCell.swift */; };
+		8535DDD3232C9830001CB65A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8535DDD2232C9830001CB65A /* TableViewCell.swift */; };
 		85AE6C902329E78300C0F470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C8F2329E78300C0F470 /* AppDelegate.swift */; };
-		85AE6C922329E78300C0F470 /* signVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C912329E78300C0F470 /* signVC.swift */; };
+		85AE6C922329E78300C0F470 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE6C912329E78300C0F470 /* SignViewController.swift */; };
 		85AE6C952329E78300C0F470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C932329E78300C0F470 /* Main.storyboard */; };
 		85AE6C972329E78500C0F470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C962329E78500C0F470 /* Assets.xcassets */; };
 		85AE6C9A2329E78500C0F470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE6C982329E78500C0F470 /* LaunchScreen.storyboard */; };
@@ -31,17 +31,17 @@
 		85C237FA2351660A00579F04 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237F92351660A00579F04 /* FirebaseInstanceID.framework */; };
 		85C237FC2351660A00579F04 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237FB2351660A00579F04 /* FirebaseStorage.framework */; };
 		85C237FE2351660A00579F04 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C237FD2351660A00579F04 /* GoogleDataTransport.framework */; };
-		85F591EE2332377F00362D36 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F591ED2332377F00362D36 /* signUpViewController.swift */; };
+		85F591EE2332377F00362D36 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F591ED2332377F00362D36 /* SignUpViewController.swift */; };
 		86A2B1175E1000700340C0B3 /* Pods_instaCloneWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003FC7C22FF1458B0157D0FE /* Pods_instaCloneWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003FC7C22FF1458B0157D0FE /* Pods_instaCloneWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaCloneWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFE36E50638B1D0AB7501A4 /* Pods-instaCloneWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaCloneWithFirebase.debug.xcconfig"; path = "Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
-		8535DDD2232C9830001CB65A /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		8535DDD2232C9830001CB65A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		85AE6C8C2329E78300C0F470 /* instaCloneWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaCloneWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AE6C8F2329E78300C0F470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85AE6C912329E78300C0F470 /* signVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signVC.swift; sourceTree = "<group>"; };
+		85AE6C912329E78300C0F470 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		85AE6C942329E78300C0F470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85AE6C962329E78500C0F470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AE6C992329E78500C0F470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		85C237F92351660A00579F04 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C237FB2351660A00579F04 /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C237FD2351660A00579F04 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85F591ED2332377F00362D36 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		85F591ED2332377F00362D36 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9818295D1C5E03B464AD24BE /* Pods-instaCloneWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaCloneWithFirebase.release.xcconfig"; path = "Target Support Files/Pods-instaCloneWithFirebase/Pods-instaCloneWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,9 +160,9 @@
 		85F84FD423B4336400F4760C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				85AE6C912329E78300C0F470 /* signVC.swift */,
-				85F591ED2332377F00362D36 /* signUpViewController.swift */,
-				8535DDD2232C9830001CB65A /* tableViewCell.swift */,
+				85AE6C912329E78300C0F470 /* SignViewController.swift */,
+				85F591ED2332377F00362D36 /* SignUpViewController.swift */,
+				8535DDD2232C9830001CB65A /* TableViewCell.swift */,
 				85AE6CA72329F1AB00C0F470 /* FeedViewController.swift */,
 				85AE6CA52329F19600C0F470 /* UploadViewController.swift */,
 				85AE6CA32329F18100C0F470 /* SettingsViewController.swift */,
@@ -286,9 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F591EE2332377F00362D36 /* signUpViewController.swift in Sources */,
-				8535DDD3232C9830001CB65A /* tableViewCell.swift in Sources */,
-				85AE6C922329E78300C0F470 /* signVC.swift in Sources */,
+				85F591EE2332377F00362D36 /* SignUpViewController.swift in Sources */,
+				8535DDD3232C9830001CB65A /* TableViewCell.swift in Sources */,
+				85AE6C922329E78300C0F470 /* SignViewController.swift in Sources */,
 				85AE6CA62329F19600C0F470 /* UploadViewController.swift in Sources */,
 				85AE6CA82329F1AB00C0F470 /* FeedViewController.swift in Sources */,
 				85AE6C902329E78300C0F470 /* AppDelegate.swift in Sources */,

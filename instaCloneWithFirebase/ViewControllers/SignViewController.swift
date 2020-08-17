@@ -11,8 +11,8 @@ import Firebase
 import FacebookLogin
 import FacebookCore
 
-
-class signVC: UIViewController {
+class SignViewController: UIViewController {
+    
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
@@ -21,20 +21,18 @@ class signVC: UIViewController {
         let appdelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appdelegate.rememberuser()
     }
-
+    
     @IBAction func facebookLogin(_ sender: Any) {
         let manager = LoginManager()
         manager.logIn(permissions: [.publicProfile, .email], viewController: self) { (result) in
             switch result {
             case .success(granted: _, declined: _, token: _):
-               self.singIntoFirebase()
+                self.singIntoFirebase()
             case .failed(let err):
                 print(err)
             case .cancelled:
                 print("cancel")
             }
-           
-            
             self.performSegue(withIdentifier: "toFeedVC", sender: nil)
         }
     }
@@ -48,16 +46,14 @@ class signVC: UIViewController {
                 return
             }
             print("succesful logged")
-            
         }
     }
-    
     
     @IBAction func signInClick(_ sender: Any) {
         if emailText.text != "" && passwordText.text != "" {
             Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
                 if error != nil {
-                   self.makeAlert(titleInput: "HATA", messageInput: error?.localizedDescription ?? "Error" )
+                    self.makeAlert(titleInput: "HATA", messageInput: error?.localizedDescription ?? "Error" )
                 }else{
                     self.performSegue(withIdentifier: "toFeedVC", sender: nil)
                 }
@@ -65,25 +61,10 @@ class signVC: UIViewController {
         }else{
             makeAlert(titleInput: "HATA", messageInput: "Kullanıcı Adı veya Parola Hatalı")
         }
-    
     }
     
     @IBAction func signUpClick(_ sender: Any) {
-        
-        
         performSegue(withIdentifier: "signup", sender: nil)
-        /* if emailText.text != "" && passwordText.text != "" {
-            Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
-                if error != nil {
-                    self.makeAlert(titleInput: "HATA", messageInput: error?.localizedDescription ?? "Error")
-                    }else{
-                   self.performSegue(withIdentifier: "signup", sender: nil)
-                }
-            }
-        }else{
-            makeAlert(titleInput: "HATA", messageInput: "Kullanıcı Adı veya Parola Hatalı")
-        } */
- 
     }
     
     func makeAlert(titleInput:String,messageInput:String) {
@@ -93,4 +74,3 @@ class signVC: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
-

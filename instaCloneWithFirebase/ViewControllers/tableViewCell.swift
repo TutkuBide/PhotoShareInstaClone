@@ -9,7 +9,8 @@
 import UIKit
 import Firebase
 
-class tableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
+    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var documentIDLabel: UILabel!
@@ -23,21 +24,13 @@ class tableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        
     }
+    
     @IBAction func likeButton(_ sender: Any) {
-        
         let fireStoreDatabase = Firestore.firestore()
-        
         if let likeCount = Int(likeLabel.text!) {
             let likeStore = ["likes" : likeCount + 1] as [String : Any]
             fireStoreDatabase.collection("Posts").document(documentIDLabel.text!).setData(likeStore, merge: true)
         }
-        
-        
-        
-        
     }
-    
 }
